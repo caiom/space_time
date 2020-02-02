@@ -55,16 +55,16 @@ def numero_ilhas(mapa):
     
     height, width = mapa_np.shape[:2]
     
-    numero_atual = 2
+    nr_ilhas = 0
     
     for i in range(height):
         for j in range(width):
             
             if mapa_np[i, j] == 1:
-                flood_fill(mapa_np, i, j, numero_atual)
-                numero_atual += 1
+                flood_fill(mapa_np, i, j, 0)
+                nr_ilhas += 1
                 
-    return numero_atual - 2
+    return nr_ilhas
             
             
             
