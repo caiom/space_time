@@ -86,5 +86,7 @@ mapa = [[ 0., 0., 0., 0., 0., 0.],
     [ 0., 0., 0., 0., 1., 0.],
     [ 0., 0., 0., 0., 0., 0.]]
 
-print(quantidade_de_terra_afetada(mapa, 5, 0))
 print(numero_ilhas(mapa))
+print(quantidade_de_terra_afetada(mapa, 0, 0))
+print(quantidade_de_terra_afetada(mapa, 2, 2))
+
