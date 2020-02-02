@@ -59,9 +59,9 @@ def numero_ilhas(mapa):
     
     for i in range(height):
         for j in range(width):
-            found = flood_fill(mapa_np, i, j, numero_atual)
             
-            if found:
+            if mapa_np[i, j] == 1:
+                flood_fill(mapa_np, i, j, numero_atual)
                 numero_atual += 1
                 
     return numero_atual - 2
